@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     padding: 5px 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    /* 특정 위치에 고정시킨 후 content 안짤리게 함 */
+    /* padding left, right를 늘려도 box width 안 늘리고 고정시킴 */
 }
 
 .status-bar__column{
@@ -20,7 +26,7 @@
 
 .status-bar__column:last-child{
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: center;
 }
 
