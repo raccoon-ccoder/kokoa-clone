@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+
+        <div class="status-bar__column">
+            <span>60%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>                   
+            <i class="fas fa-bolt"></i>        
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fab fa-sistrix fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span class="screen-header__icons-dots dots">1</span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-user-tag"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+
+        <div class="recommended-friends">
+            <h6 class="recommended_friends__title">
+                Recommended Friends
+            </h6>
+            <span>You have no recommended friends.</span>
+        </div>
+
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>
+                    Go to Openchat Home
+                    <i class="fas fa-chevron-right fa-xs"></i>
+                </span>
+            </div>
+
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#난폭냥이길들이기</h5>
+                    <h6 class="open-post__hashtags">#착한냥이#cat#집사</h6> <!--실제로는 대문자로 보여지지만 html에선 소문자로 작성 (대문자는 디자인적인 요소기에 굳이 대문자로 작성 X)-->
+                    <div class="open-post__members">
+                        <img src="img/staring-cat.jpeg" />
+                        <span class="open-post__member-count">104 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="img/cats-together.png" />
+                        
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-s"></i>
+                            <span>284</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#나약하지않는너구리</h5>
+                    <h6 class="open-post__hashtags">#나약굴에서_탈출#강굴만들기</h6> <!--실제로는 대문자로 보여지지만 html에선 소문자로 작성 (대문자는 디자인적인 요소기에 굳이 대문자로 작성 X)-->
+                    <div class="open-post__members">
+                        <img src="img/raccoon_character.png" />
+                        <span class="open-post__member-count">7 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="img/panda.jpeg" />
+                        
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-s"></i>
+                            <span>130</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+   <nav class="nav">
+       <ul class="nav__list">
+           <li class="nav__btn">
+               <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>                
+                </a>
+            </li>
+           <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badges">1</span>
+                    <i class="far fa-comment fa-2x"></i>                
+                </a>
+            </li>
+           <li class="nav__btn">
+               <a class="nav__link" href="find.html">
+                   <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+           <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav_etc-notification dots">1</span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+       </ul>
+   </nav>
+    <script src="https://kit.fontawesome.com/f98d5103ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

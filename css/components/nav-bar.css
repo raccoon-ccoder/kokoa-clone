@@ -25,16 +25,7 @@
 }
 
 .nav_etc-notification{
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    color: tomato;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     left: 30px;
     bottom: 25px;
-    font-size: 1px;
 }
