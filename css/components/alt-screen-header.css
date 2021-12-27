@@ -1,0 +1,23 @@
+.alt-header {
+    padding: var(--horizontal-space);
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+}
+
+.alt-header__title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* header에서 alt-header의 justify-content를 space-between으로 하지 않은 이유?
+    space-between은 글자 수에 따라 배열이 중앙 정렬이 안됨
+    따라서 auto로 설정 후 자식 요소애 margin-left, right에 auto로 설정하여 글자 수와 무관하게 중앙 정렬*/
+.alt-header__column:first-child {
+    margin-right: auto;
+}
+
+.alt-header__column:last-child {
+    margin-left: auto;
+}
