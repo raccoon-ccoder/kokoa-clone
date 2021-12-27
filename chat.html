@@ -43,24 +43,50 @@
 
     <!-- 시간 알림 -->
     <main class="main-screen main-chat">
-      <div class="chat__timestamp">
-          Wednesday, December 14, 2021
-      </div>
+        <div class="chat__timestamp">
+            Wednesday, December 14, 2021
+        </div>
 
-      <!-- 메세지 부분 -->
-      <div class="message-row">
-          <img src="img/cat.jpeg" />
-          <div class="message-row__content">
-              <span class="message__author">냐옹이</span>
-              
-              <div class="message__bubble">
-                <span class="message__detail">밥 잘 주는 구인 구하고 있냐옹...</span>
-                <span class="message__time">21:22</span>
-              </div>
+        <!-- 상대방이 나에게 보내는 메세지 -->
+        <div class="message-row">
+            <img src="img/cat.jpeg" />
+            <div class="message-row__content">
+                <span class="message__author">냐옹이</span>
+                
+                <div class="message__bubble">
+                    <span class="message__detail">밥 잘 주는 구인 구하고 있냐옹...</span>
+                    <span class="message__time">21:22</span>
+                </div>
+                </div>
+        </div>
+
+        <!-- 내가 상대방에게 보내는 메세지 -->
+        <div class="message-row message-row--own">
+            <div class="message-row__content">            
+                <div class="message__bubble">
+                <span class="message__detail">나냥이가 돈 벌어 오면 밥은 줄 수 있어요</span>
+                <span class="message__time">21:24</span>
+                </div>
             </div>
-      </div>
+        </div>
     </main>
 
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message" />
+            <i class="far fa-smile fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up fa-lg"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="no-mobile">
+        <span>Your Screen is too big ;ㅅ;</span>
+    </div>
 
     <script src="https://kit.fontawesome.com/f98d5103ee.js" crossorigin="anonymous"></script>
 </body>
