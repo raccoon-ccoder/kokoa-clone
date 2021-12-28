@@ -1,18 +1,42 @@
 #no-mobile {
-    position: absolute;
-    z-index: 99;
-    height: 100vh;
-    background-color: var(--yellow);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    top: 0;
+    display: none;
 }
 
-@media screen and (max-width:645px) {
+/* 
+    가로 모드 불가로 만들기 위해 논리합 미디어 쿼리 사용 : 콤마 이용 (,) 
+    둘 중 하나라도 참이 아니라면 쿼리 조건문 일치
+*/
+
+/*
+    chat.html에서 화면 늘렸을 때 스크롤바 때문에 form 태그 안 가려지는 문제
+    1) max-width -> min-width로 변경 
+    : 화면을 넓혔을 시 body(class="chat-screen")의 높이인 300vh를 100%로 만들어야 하기에
+    최소 너비에서 넘어가면 body height 같이 조정
+
+    2) position absolute -> fixed로 변경
+    : 부모 요소가 아닌 화면 기준으로 기준점을 변경하여 모든 화면을 가려주게 함
+
+    3) body에 스크롤 불가 설정
+    : body height 100%, overflow: hidden 추가 
+*/
+@media screen and (min-width:645px), screen and (max-height:700px) {
     #no-mobile {
-        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--yellow);
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
     }
 }
