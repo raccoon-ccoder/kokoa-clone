@@ -29,13 +29,29 @@
     opacity: 0.6;
 }
 
+@keyframes fadeInPost {
+    0% {
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .open-post {
+    opacity: 0;
+    transform: translateY(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: var(--main-border);
+    animation: fadeInPost 0.5s ease-in-out forwards;
+}
+
+.open-post:nth-of-type(3) {
+    animation-delay:0.5s;
 }
 
 .open-post__title {

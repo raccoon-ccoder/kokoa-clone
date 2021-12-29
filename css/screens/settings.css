@@ -16,3 +16,33 @@
 .settings_setting-column:last-child {
     opacity: 0.5;
 }
+
+@keyframes shakeHorn {
+    0%, 50% {
+        transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45% {
+        transform: rotate(10deg);
+    }
+    10%, 20%, 30%, 40% {
+        transform: rotate(-10deg);
+    }
+}
+
+.fa-bullhorn:hover, 
+.fa-flask:hover {
+    animation: shakeHorn 1s linear infinite;
+}
+
+@keyframes scaleCircle {
+    0%, 100%  {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.settings_setting-column .fa-exclamation-circle:hover {
+    animation: scaleCircle 1s linear infinite;
+}

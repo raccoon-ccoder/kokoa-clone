@@ -202,3 +202,29 @@
 .reply:focus-within {
     transform: translateY(80px);
 }
+
+@keyframes appearFromLeft {
+    from {
+        transform: translateX(-30px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.message-row--you {
+    animation: appearFromLeft 0.5s linear;
+}
+
+@keyframes appearFromRight {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.message-row--own {
+    animation: appearFromRight 0.5s linear;
+}

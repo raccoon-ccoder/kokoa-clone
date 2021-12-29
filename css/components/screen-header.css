@@ -19,6 +19,10 @@
     margin-left: 20px;
 }
 
+.screen-header__icons span:hover{
+    cursor: pointer;
+}
+
 .screen-header__icons-dots {
     position: absolute;
     left: 65px;
@@ -36,4 +40,25 @@
 
 .screen-header__icons .fa-cog:hover {
     animation: rotateCog 2s linear infinite;
+}
+
+/* 
+    애니메이션을 50%까지만 한 이유?
+    50 - 100%는 아이콘이 흔들리지 않고 쉬게끔 하기 위해서다.
+    애니메이션은 infinite로 설정했기에 0 -50% 시간에는 아이콘이 흔들리고, 50 - 100%는 잠시 쉬게 함
+*/
+@keyframes shakeIcon{
+    0%, 50%{
+        transform: rotate(0deg);
+        }
+      5%, 15%, 25%, 35%, 45% {
+        transform: rotate(10deg);
+      }
+      10%, 20%, 30%, 40% {
+        transform: rotate(-10deg);
+      }
+}
+
+.screen-header__icons .fa-sistrix:hover {
+    animation: shakeIcon 0.5s linear infinite;
 }
